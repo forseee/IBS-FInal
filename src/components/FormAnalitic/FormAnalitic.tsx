@@ -29,7 +29,6 @@ const INITIAL_FORM_STATE = {
 const FORM_VALIDATION = Yup.object().shape({
   vacationName: Yup.string().required('Required'),
   histogram: Yup.string().required('Required'),
-  // cityName: Yup.object().required('Required'),
 });
 
 export const FormAnalitics: React.FC = () => {
@@ -104,7 +103,6 @@ export const FormAnalitics: React.FC = () => {
                   </Button>
                 </Grid>
               </Grid>
-              <pre>{JSON.stringify(values, null, 2)}</pre>
             </Form>
           </div>
         </Container>

@@ -4,7 +4,7 @@ const instance: AxiosInstance = axios.create({
   baseURL: '/api',
 });
 
-export const API2 = {
+export const API = {
   getStatistic(vacation: string, city: string) {
     if (city === 'undefined' || city === '') {
       return instance.get(`/search?name=${vacation}`).then((response) => {
