@@ -1,0 +1,31 @@
+export interface IStatistic {
+  salaryFrom: number;
+  salaryTo: number;
+  countermin: number;
+  countermax: number;
+  column1l: number;
+  column1Count: number;
+  column1r: number;
+  column1s: string;
+  column2l: number;
+  column2Count: number;
+  column2r: number;
+  column2s: string;
+  column3l: number;
+  column3Count: number;
+  column3r: number;
+  column3s: string;
+  column4l: number;
+  column4Count: number;
+  column4r: number;
+  column4s: string;
+  column5l: number;
+  column5Count: number;
+  column5r: number;
+  column5s: string;
+  column6l: number;
+  column6Count: number;
+  column6r: number;
+  column6s: string;
+  mediana: number;
+}
