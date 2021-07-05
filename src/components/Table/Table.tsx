@@ -54,7 +54,7 @@ const useStyles = makeStyles({
   },
 });
 
-export function StickyHeadTable() {
+export const StickyHeadTable: React.FC = () => {
   const {
     data: { items },
   } = useTypedSelector((state) => state);
@@ -120,4 +120,4 @@ export function StickyHeadTable() {
       </>
     );
   } else return null;
-}
+};
