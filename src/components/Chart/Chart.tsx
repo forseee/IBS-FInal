@@ -102,6 +102,7 @@ export const Chart: React.FC = () => {
 
   const [getPng, { ref, isLoading }] = useCurrentPng();
   const handleDownload = useCallback(async () => {
+    window.scrollTo(0, 0)
     const png = await getPng();
     if (png) {
       saveAs(png, 'myChart.png');
