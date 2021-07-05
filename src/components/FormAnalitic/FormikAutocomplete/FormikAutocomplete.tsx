@@ -84,6 +84,7 @@ const options = [
   { value: '1511', label: "Волгоградская область" },
   { value: '1553', label: "Республика Калмыкия" },
   { value: '1530', label: "Ростовская область" },
+  { value: '', label: "Все регионы" },
 ];
 
 const FormikAutocomplete = (props: any) => {

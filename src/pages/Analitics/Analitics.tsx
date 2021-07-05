@@ -19,7 +19,7 @@ const Analitics = () => {
       ) : (
         <>
           <Chart />
-          <div style={{ maxWidth: '1200px', margin: '40px auto', padding: '150px 30px' }}>
+          <div style={{ maxWidth: '1200px', margin: '40px auto 0 ', padding: '150px 30px' }}>
             <StickyHeadTable />
           </div>
         </>

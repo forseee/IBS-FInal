@@ -1,16 +1,10 @@
 import React from 'react';
+import style from './home.module.scss';
 
 const Home = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingTop: '300px',
-        fontSize:'30px'
-      }}>
-      <p>Это домашняя страничка сайта аналитики групы №6</p>
+    <div className={style.home}>
+      <p className={style.hometext}>Это домашняя страничка сайта аналитики групы №6</p>
     </div>
   );
 };

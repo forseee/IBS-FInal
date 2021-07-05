@@ -37,8 +37,8 @@ export const FormAnalitics: React.FC = () => {
   const { data__getItems } = useActions();
 
   useEffect(() => {
+    const { name, area } = qs.parse(history.location.search, { ignoreQueryPrefix: true });
     const loadItems = async () => {
-      const { name, area } = qs.parse(history.location.search, { ignoreQueryPrefix: true });
       setSubmitting(true);
       if (typeof name === 'string' && typeof area === 'string') {
         await data__getItems(name, area);
